@@ -1,11 +1,46 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  Hola hola hola
-</body>
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://kit.fontawesome.com/367c7538d3.js" crossorigin="anonymous"></script>
+    <!-- CDN de daisyIU para componentes -->
+    <link rel="stylesheet" href="./assets/style.css">
+  </head>
+  <body>
+    <nav class="bg-amber-400 flex justify-center gap-10 mt-2 h-20 items-center">
+      <div class="py-5 pl-2 w-48">
+        <a class="text-3xl font-sans font-bold border-4 px-2 pb-1 rounded-xl">CS.STORE</a>
+      </div>
+      <div class="hidden md:flex">
+        <!-- <a class="fa-solid fa-bars text-blue-900 text-3xl md:hidden"></a> -->
+        <div class="p-5">
+          <a class="px-5 text-shadow-lg/30" href="/index.html">Inicio</a>
+          <a class="px-5 text-shadow-lg/30" href="./views/card_view.html">Tienda</a>
+          <a class="px-5 text-shadow-lg/30">Pedidos</a>
+          <a class="px-5 text-shadow-lg/30">Sobre</a>
+          
+        </div>
+        <div class="p-5 ml-10 block">
+          <a class="px-6 py-1 pb-1.5 bg-zinc-800 text-white rounded-l-lg" href="./views/login_view.html">Login</a>
+          <a class="px-4 py-1 pb-1.5 bg-zinc-800 text-white rounded-r-lg">Register</a>
+        </div>
+      </div>
+    </nav>
+    <!-- Carrusel de fotos se intento  :P -->
+     <div class="carousel w-full mt-20 flex justify-center">
+      <div id="img1" class="carousel-item bg-amber-100 w-3/4 h-26 sm:h-32 md:h-44 lg:h-56 xl:h-62 rounded-xl">
+        <img class="w-full h-full object-cover rounded-xl" src="https://i.blogs.es/2e59c3/macbook-pro-m5-pro-16-analisis-xataka-12/1024_682.jpeg" alt="imagen1">
+      </div>
+     </div>
+     <div class="flex w-full justify-center gap-2 py-2">
+      <a href="#img1" class="px-4 py-2 border-2 bg-amber-400 rounded-lg hover:bg-amber-500"></a>
+      <a href="#img2" class="px-4 py-2 border-2 bg-amber-400 rounded-lg hover:bg-amber-500"></a>
+      <a href="#img3" class="px-4 py-2 border-2 bg-amber-400 rounded-lg hover:bg-amber-500"></a>
+      <a href="#img4" class="px-4 py-2 border-2 bg-amber-400 rounded-lg hover:bg-amber-500"></a>
+    </div>
+
+    <script></script>
+  </body>
 </html>
