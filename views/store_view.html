@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <script src="https://kit.fontawesome.com/367c7538d3.js" crossorigin="anonymous"></script>
+  <style>
+    body {
+      background-color: oklch(20.5% 0 0);
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="bg-amber-400 flex justify-center gap-10 mt-2 h-20 items-center">
+    <div class="py-5 pl-2 w-48">
+      <a class="text-3xl font-sans font-bold border-4 px-2 pb-1 rounded-xl" href="../index.html">CS.STORE</a>
+    </div>
+    <div class="hidden md:flex">
+      <!-- <a class="fa-solid fa-bars text-blue-900 text-3xl md:hidden"></a> -->
+      <div class="p-5">
+        <a class="px-5 text-shadow-lg/30" href="/index.html">Inicio</a>
+        <a class="px-5 text-shadow-lg/30">Tienda</a>
+        <a class="px-5 text-shadow-lg/30">Pedidos</a>
+        <a class="px-5 text-shadow-lg/30">Sobre</a>
+
+      </div>
+      <div class="p-5 ml-10 block">
+        <a class="px-6 py-1 pb-1.5 bg-zinc-800 text-white rounded-l-lg" href="./login_view.html">Login</a>
+        <a class="px-4 py-1 pb-1.5 bg-zinc-800 text-white rounded-r-lg">Register</a>
+      </div>
+    </div>
+  </nav>
+  <!-- Boton cerrar sesion en store view -->
+  <div>
+    <button id="logout" class="text-xl bg-amber-400 px-3 py-1 mt-5 ml-5 mb-5 rounded-xl border-2 border-amber-500 hover:bg-amber-500" style="cursor: pointer">Cerrar Sesion</button>
+  </div>
+
+  <!-- Vista de productos (Card) -->
+  <!-- <div class="mt-30 w-32 w-full  flex flex-wrap justify-center items-center gap-20">
+      <div class="grid max-w-sm bg-zinc-700 px-4 py-4 gap-6 rounded-xl font-semibold">
+        <a href="#" class="">
+          <img class="w-full h-full object-cover rounded-xl" src="https://casemotions.pe/wp-content/uploads/2026/01/IP17PRO_000PRINCIPAL.jpg" alt="imagen1">
+        </a>
+        <a href="" class="text-3xl text-white">iPhone 17 Pro Max 256GB</a>
+        <h2 class="text-4xl text-amber-300">S/.4950.00</h2>
+        <a href="" 
+          class="text-xl bg-amber-400 w-40 p-2 ml-48 flex justify-center rounded-xl hover:bg-amber-500">
+          Agregar al <i class="fa-solid fa-cart-arrow-down mt-1 ml-2"></i></a>
+      </div>
+      
+      
+     </div> -->
+
+  <!-- Card de productos -->
+  <div id="productsContainer" class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8 p-8"></div>
+  
+
+  <script src="/scripts/store.js" type="module"></script>
+  <script src="/scripts/createProd.js" type="module"></script>
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <script src="https://kit.fontawesome.com/367c7538d3.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="/assets/style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div>
+    <p class="mt-5 ml-20 text-3xl text-white">Aqui se muestra el producto seleccionado</p>
+  </div>
+  <!-- <main class="mt-30 w-32 w-full  flex flex-wrap justify-center items-center gap-20">
+    <section>
+      <div>
+        <img id="imgproduct" class="w-full h-full object-cover rounded-xl">
+      </div>
+      <div>
+        <h1 id="prodName" class="text-3xl text-white"></h1>
+        <p id="details"></p>
+        <div id="category"></div>
+        <p id="price"></p>
+      </div>
+    </section>
+  </main> -->
+  <main class="flex justify-center mt-20 mx-20">
+    <section class="grid grid-cols-1 lg:grid-cols-2 max-w-6xl w-full bg-zinc-700 gap-8 rounded-xl p-6 shadow-lg items-center">
+      <div>
+        <img id="imgproduct" class="w-full h-120 object-cover rounded-xl">
+      </div>
+      <div class="flex flex-col gap-3">
+        <h1 id="prodName" class="text-3xl text-white"></h1>
+        <p id="details" class="text-sm text-gray-300"></p>
+        <div id="category" class="text-sm text-zinc-300"></div>
+        <p id="price" class="text-4xl text-amber-300"></p>
+        <button
+          class="text-xl bg-amber-400 w-40 p-2 ml-auto flex justify-center rounded-xl hover:bg-amber-500 transition"
+          style="cursor: pointer">
+          Agregar al
+          <i class="fa-solid fa-cart-arrow-down mt-1 ml-2"></i>
+        </button>
+      </div>
+    </section>
+  </main>
+  <div class="flex justify-end">
+    <a id="back"
+      class="text-xl bg-amber-400 px-3 py-1 mt-20 mr-20 mb-5 rounded-xl border-2 border-amber-500 hover:bg-amber-500"
+      style="cursor: pointer" href="./store_view.html">Regresar</a>
+  </div>
+
+  <script src="/scripts/detailProd.js" type="module"></script>
+</body>
+
+</html>
